@@ -27,6 +27,10 @@ module OmniAuth
       def raw_info
         @raw_info ||= access_token.get('https://api.moves-app.com/api/v1/user/profile').parsed
       end
+
+      def query_string
+        ''
+      end
       
       private
       
